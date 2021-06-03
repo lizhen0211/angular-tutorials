@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // DJANGO_TUTORIALS_SERVE_URL: '//192.168.6.49:8010'
+  DJANGO_TUTORIALS_SERVE_URL: '//django-tutorials.lizhen.cn'
 };
 
 /*
