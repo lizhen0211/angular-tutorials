@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {GetCookieService} from "../../request/get-cookie.service";
+import {CookieUtil} from "../../util/cookie-util";
 
 @Component({
   selector: 'app-cookie-demo',
@@ -18,6 +19,10 @@ export class CookieDemoComponent implements OnInit {
     this.getCookieService.setCookieFromServer().subscribe(res => {
       console.log(res);
       console.log('onSet document.cookie:' + document.cookie);
+      let val1 = CookieUtil.getCookieValByKey('hello');
+      let val2 = CookieUtil.getCookieValByKey('hello2');
+      console.log('val1:' + val1);
+      console.log('val2:' + val2);
     }, err => {
       console.log(err);
     })
