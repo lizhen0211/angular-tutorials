@@ -24,6 +24,38 @@ export class RedisDemoComponent implements OnInit {
 
   public onGetCacheClick(): void {
     this.redisService.getRedisCache().subscribe(res => {
+      console.log(res.body);
+    }, err => {
+      console.log(err);
+    });
+  }
+
+  public onNativeSetCacheClick(): void {
+    this.redisService.native_set_cache().subscribe(res => {
+      console.log(res);
+    }, err => {
+      console.log(err);
+    });
+  }
+
+  public native_set_cache_param(): void {
+    this.redisService.native_set_cache_param().subscribe(res => {
+      console.log(res);
+    }, err => {
+      console.log(err);
+    });
+  }
+
+  public native_set_cache_list(): void {
+    this.redisService.native_set_cache_list().subscribe(res => {
+      console.log(res);
+    }, err => {
+      console.log(err);
+    });
+  }
+
+  public native_set_cache_set(): void {
+    this.redisService.native_set_cache_set().subscribe(res => {
       console.log(res);
     }, err => {
       console.log(err);
