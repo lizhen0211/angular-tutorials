@@ -21,4 +21,8 @@ export class HomeComponent implements OnInit {
   public onRedisClick(): void {
     this.router.navigate(['redis'])
   }
+
+  public onProvidersClick(): void {
+    this.router.navigate(['prodivers'])
+  }
 }

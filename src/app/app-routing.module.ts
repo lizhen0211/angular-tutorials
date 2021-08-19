@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {CookieDemoComponent} from "./pages/cookie-demo/cookie-demo.component";
 import {HomeComponent} from "./pages/home/home.component";
 import {RedisDemoComponent} from "./pages/redis-demo/redis-demo.component";
+import {ProdiversDemoComponent} from "./pages/prodivers-demo/prodivers-demo.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -12,6 +13,8 @@ const routes: Routes = [
     path: 'redis', component: RedisDemoComponent
   }, {
     path: 'cookie', component: CookieDemoComponent
+  }, {
+    path: 'prodivers', component: ProdiversDemoComponent
   }];
 
 @NgModule({
