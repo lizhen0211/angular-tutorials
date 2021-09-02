@@ -10,6 +10,7 @@ import {RedisDemoComponent} from './pages/redis-demo/redis-demo.component';
 import {ProdiversDemoComponent} from './pages/prodivers-demo/prodivers-demo.component';
 import {NormalService} from "./service/normal.service";
 import {RealService} from "./service/real.service";
+import {DbDemoComponent} from './pages/db-demo/db-demo.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {RealService} from "./service/real.service";
     CookieDemoComponent,
     HomeComponent,
     RedisDemoComponent,
-    ProdiversDemoComponent
+    ProdiversDemoComponent,
+    DbDemoComponent
   ],
   imports: [
     BrowserModule,
