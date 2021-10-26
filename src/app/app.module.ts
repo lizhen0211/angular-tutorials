@@ -11,6 +11,8 @@ import {ProdiversDemoComponent} from './pages/prodivers-demo/prodivers-demo.comp
 import {NormalService} from "./service/normal.service";
 import {RealService} from "./service/real.service";
 import {DbDemoComponent} from './pages/db-demo/db-demo.component';
+import { RouteDemoComponent } from './pages/route-demo/route-demo.component';
+import { RouteDemoDetailComponent } from './pages/route-demo-detail/route-demo-detail.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import {DbDemoComponent} from './pages/db-demo/db-demo.component';
     HomeComponent,
     RedisDemoComponent,
     ProdiversDemoComponent,
-    DbDemoComponent
+    DbDemoComponent,
+    RouteDemoComponent,
+    RouteDemoDetailComponent
   ],
   imports: [
     BrowserModule,

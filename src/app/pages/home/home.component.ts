@@ -29,4 +29,8 @@ export class HomeComponent implements OnInit {
   public onDbClick(): void {
     this.router.navigate(['db'])
   }
+
+  public onRouteClick(): void {
+    this.router.navigate(['route'])
+  }
 }

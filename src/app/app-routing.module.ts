@@ -5,6 +5,8 @@ import {HomeComponent} from "./pages/home/home.component";
 import {RedisDemoComponent} from "./pages/redis-demo/redis-demo.component";
 import {ProdiversDemoComponent} from "./pages/prodivers-demo/prodivers-demo.component";
 import {DbDemoComponent} from "./pages/db-demo/db-demo.component";
+import {RouteDemoComponent} from "./pages/route-demo/route-demo.component";
+import {RouteDemoDetailComponent} from "./pages/route-demo-detail/route-demo-detail.component";
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch: 'full'},
@@ -18,6 +20,10 @@ const routes: Routes = [
     path: 'prodivers', component: ProdiversDemoComponent
   }, {
     path: 'db', component: DbDemoComponent
+  }, {
+    path: 'route', component: RouteDemoComponent
+  }, {
+    path: 'route-detail', component: RouteDemoDetailComponent
   }];
 
 @NgModule({
