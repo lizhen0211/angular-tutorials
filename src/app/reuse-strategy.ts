@@ -7,7 +7,7 @@ export class ReuseStrategy implements RouteReuseStrategy {
 
   shouldDetach(route: ActivatedRouteSnapshot): boolean {
     // console.debug('ReuseStrategy:shouldDetach', route);
-    return true;
+    return route.data.iskeep;
   }
 
   store(route: ActivatedRouteSnapshot, handle: DetachedRouteHandle): void {

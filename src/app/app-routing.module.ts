@@ -21,7 +21,9 @@ const routes: Routes = [
   }, {
     path: 'db', component: DbDemoComponent
   }, {
-    path: 'route', component: RouteDemoComponent
+    path: 'route', component: RouteDemoComponent, data: {
+      iskeep: false
+    }
   }, {
     path: 'route-detail', component: RouteDemoDetailComponent
   }];
