@@ -46,6 +46,14 @@ export class RedisDemoComponent implements OnInit {
     });
   }
 
+  public native_hash(): void {
+    this.redisService.native_hash().subscribe(res => {
+      console.log(res);
+    }, err => {
+      console.log(err);
+    });
+  }
+
   public native_set_cache_list(): void {
     this.redisService.native_set_cache_list().subscribe(res => {
       console.log(res);

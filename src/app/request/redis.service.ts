@@ -28,6 +28,10 @@ export class RedisService {
     return this.httpClient.post<HttpResponse<any>>(environment.DJANGO_TUTORIALS_SERVE_URL + '/redis/native_set_cache_param', HttpRequestUtil.getFormOptions());
   }
 
+  public native_hash(): Observable<HttpResponse<any>> {
+    return this.httpClient.post<HttpResponse<any>>(environment.DJANGO_TUTORIALS_SERVE_URL + '/redis/native_hash', HttpRequestUtil.getFormOptions());
+  }
+
   public native_set_cache_list(): Observable<HttpResponse<any>> {
     return this.httpClient.post<HttpResponse<any>>(environment.DJANGO_TUTORIALS_SERVE_URL + '/redis/native_set_cache_list', HttpRequestUtil.getFormOptions());
   }
